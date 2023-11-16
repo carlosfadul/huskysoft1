@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huskysoft</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        #logo {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .franja {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #franjaAzul {
+            background-color: blue;
+        }
+
+        #franjaAmarilla {
+            background-color: yellow;
+        }
+
+        #franjaVerde {
+            background-color: green;
+        }
+
+        .contenido {
+            flex-grow: 1;
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        .botonWhatsapp, .botonInformacion {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .botonWhatsapp {
+            background-color: #25D366; /* Color verde de WhatsApp */
+        }
+
+        .botonInformacion {
+            background-color: #007BFF; /* Color azul de Bootstrap */
+        }
+
+        #imagenPerro {
+            width: 100%;
+            max-width: 100px;
+            height: auto;
+            border-radius: 8px; /* Añadido para esquinas redondeadas */
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Cambia la ruta del logo según tu estructura de carpetas -->
+        <img id="logo" src="https://i.pinimg.com/736x/8e/00/ab/8e00ab696dc3653e55e46f63d0efe890.jpg" alt="Logo">
+    </header>
+    <div id="franjaAzul" class="franja">
+        <img id="imagenPerro" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/11.10.2015_Samoyed_%28cropped%29.jpg/1200px-11.10.2015_Samoyed_%28cropped%29.jpg"  alt="Perro">
+        <div class="contenido">
+            <p>Nombre de mi dueño: David Muñoz</p>
+            <p>Teléfono de mi dueño: 302 233 3949</p>
+            <p>Mi nombre: Gaspar</p>
+        </div>
+    </div>
+    <div id="franjaAmarilla" class="franja">
+        <a class="botonWhatsapp" href="https://wa.me/3022333949?text=Encontré%20a%20Gaspar" target="_blank">Contactar a mi dueño por Whatsapp</a>
+    </div>
+    <div id="franjaVerde" class="franja">
+        <a class="botonInformacion" href="https://app.epssim.co/" target="_blank">Información</a>
+    </div>
+</body>
+</html>
